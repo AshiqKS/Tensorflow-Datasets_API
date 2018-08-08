@@ -9,12 +9,8 @@ Original file is located at
 
 #Import necessary modules and packages
 import tensorflow as tf
-import cv2 as cv
-import glob
 import sys
-import numpy as np
 from tensorflow.keras.datasets.cifar10 import load_data
-import os
 
 #Load image and label data to train and test splits
 (train_x, train_y), (test_x, test_y) = load_data()
