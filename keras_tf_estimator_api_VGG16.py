@@ -67,7 +67,7 @@ def create_tfrecords(filename, address, labels):
 def create_labels():
   labels = []
   for i in os.listdir('training'):
-    for l in enumerate(os.listdir('training/{}'.format(i))):
+    for l, ll in enumerate(os.listdir('training/{}'.format(i))):
       labels.append(i)
   le = LabelEncoder()
   labels = le.fit_transform(labels)
