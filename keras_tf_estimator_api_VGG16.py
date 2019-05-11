@@ -127,6 +127,7 @@ def create_keras_model():
 
   #Convert the Keras model to Tensorflow Estimator instance
   keras_model = tf.keras.estimator.model_to_estimator(keras_model=model)
+  return keras_model
 
 keras_model = create_keras_model()    
     
